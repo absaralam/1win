@@ -23,19 +23,25 @@ It includes:
 | Orchestration     | `orchestrate.py`           |
 
 ---
-
 ## 📁 Folder Layout
 
-├── accounts.json # Persistent account records
-├── signup.pc.hybrid.js # Main PC-side signup runner
-├── run_chrome.py # Appium script: Chrome login
-├── install_pwa.py # Appium script: install PWA from Chrome
-├── run_android.py # Appium script: native app login and test
-├── orchestrate.py # Orchestrates full account flow
-├── conftest.py # PyTest fixture: Appium + ADB setup
-├── test_get_300.py # Final login + coin confirmation test
-├── solve_geetest.js # Optional: CAPTCHA solver for Geetest
-├── config.js # Global config values
+```
+├── accounts.json           # Persistent account records
+├── signup.pc.hybrid.js     # Main PC-side signup runner
+├── run_chrome.py           # Appium script: Chrome login
+├── install_pwa.py          # Appium script: install PWA from Chrome
+├── run_android.py          # Appium script: native app login and test
+├── orchestrate.py          # Orchestrates full account flow
+├── conftest.py             # PyTest fixture: Appium + ADB setup
+├── test_get_300.py         # Final login + coin confirmation test
+├── solve_geetest.js        # Optional: CAPTCHA solver for Geetest
+├── config.js               # Global config values
+├── helpers.py              # Common helper functions (adb, wait, status)
+├── mobile_browser.py       # Fallback mobile browser-based automation
+├── android_automation.js   # JS-based direct Appium test (Node)
+├── test_mobile_login.js    # Puppeteer test for mobile-style login
+```
+
 
 
 ---
